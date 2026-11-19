@@ -85,7 +85,8 @@ h1{font-family:"Red Hat Display","IBM Plex Sans Thai",sans-serif;font-size:clamp
 .done .opt{cursor:default}.done .opt:hover{border-color:var(--line)}
 .opt.r{border-color:var(--ok);background:var(--ok-soft)}.opt.r .k{background:var(--ok);border-color:var(--ok);color:var(--bg)}
 .opt.w{border-color:var(--bad);background:var(--bad-soft)}.opt.w .k{background:var(--bad);border-color:var(--bad);color:var(--bg)}
-.why{margin:10px 0 0 42px;font-size:16px;color:var(--muted)}
+.why{margin:12px 0 0 42px;font-size:16.5px;padding:10px 14px;background:var(--soft);border-radius:10px;line-height:1.6}
+.why .exp{margin-top:4px;color:var(--ink)}
 .why b{color:var(--ok)}
 .why.miss b{color:var(--bad)}
 @media(max-width:560px){.why{margin-left:0}}
@@ -178,60 +179,60 @@ const NOTES=[
    Answer positions are spread evenly by a fixed shuffle below. */
 const PARTS=[
  {id:"g",name:"Part I: Grammar",th:"ไวยากรณ์",qs:[
-  ["The printers ___ in Room 2 today. They're in the IT office.",["aren't","isn't","don't","doesn't"],"printers พหูพจน์ + ไม่มีกริยาแท้ → aren't"],
-  ["Mr. and Mrs. Tanaka run a small hotel. ___ hotel is near the train station.",["Their","They're","His","Our"],"Mr. and Mrs. Tanaka = they → their"],
-  ["Ploy works for ___ online shop in Bangkok.",["an","a","some","any"],"online ขึ้นต้นเสียงสระ → an"],
-  ["The ___ meeting room is on the third floor. All the managers use it.",["managers'","manager's","manager","managers"],"เป็นของผู้จัดการหลายคน → managers'"],
-  ["We tested the new software last month. Don't worry, it ___ make our work faster.",["will","won't","might","is"],"ทดสอบแล้ว มั่นใจ → will"],
-  ["A: Does your company sell products online?\nB: Yes, it ___.",["does","is","can","do"],"ถามด้วย Does → ตอบ does"],
-  ["___ there any problems with the delivery last Friday?",["Were","Was","Did","Are"],"any problems พหูพจน์ + อดีต → Were"],
-  ["The trade show starts ___ 9.30 a.m. ___ Monday.",["at / on","on / at","in / on","at / in"],"at + เวลา · on + วัน"],
-  ["We usually get more orders ___ winter.",["in","on","at","to"],"ฤดู → in"],
-  ["The machine ___ working at 4 p.m. yesterday.",["stopped","stoped","stops","stopping"],"yesterday → อดีต · stop เบิ้ล p → stopped"],
-  ["What time ___ the client call you this morning?",["did","does","was","is"],"อดีต + มีกริยาแท้ call → did"],
-  ["A: I forgot my pen.\nB: No problem. I ___ you mine.",["'ll give","give","gave","giving"],"เสนอช่วยทันที → I'll + V1"],
-  ["Please be quiet. The manager ___ to a client on the phone right now.",["is talking","talks","are talking","talked"],"right now + ประธานเอกพจน์ → is talking"],
-  ["The new warehouse is ___ than the old one, so we can keep more stock.",["larger","large","more large","the largest"],"มี than + คำสั้น → larger"],
-  ["Of the three suppliers, Green Box has ___ prices.",["the cheapest","cheaper","the most cheap","cheapest"],"3 สิ่ง → the cheapest"],
-  ["If the client ___ the contract today, we'll start the project next week.",["signs","will sign","sign","signed"],"If + V1(s) · ห้ามใช้ will"],
-  ["Ken ___ come to the office on Fridays. He can work from home.",["doesn't have to","has to","don't have to","have to"],"ไม่จำเป็น + ประธาน he → doesn't have to"],
-  ["___ the window open. The air conditioner is on.",["Don't leave","Not leave","Doesn't leave","No leave"],"ข้อห้าม → Don't + V1"],
-  ["We need some new ___ for the meeting room, like tables and chairs.",["furniture","furnitures","a furniture","many furniture"],"furniture นับไม่ได้ ไม่เติม s"],
-  ["How ___ boxes did the supplier send?",["many","much","a little","any"],"boxes นับได้ → How many"],
-  ["A: Who ___ the meeting yesterday?\nB: Our Sales Manager, Mr. Kim.",["arranged","did arrange","does arrange","arranging"],"ถามหาผู้กระทำ → ไม่ใช้ did"],
-  ["Mai ___ take an English course next term. She already decided.",["is going to","are going to","going to","is going"],"Mai เอกพจน์ → is going to + V1"],
-  ["A: Are you free on Thursday?\nB: Sorry, I ___ the supplier in Lamphun. We arranged it last week.",["'m meeting","meet","will meet","met"],"นัดไว้แล้ว → Present continuous"],
-  ["Every day, the orders ___ in the warehouse. Then each box ___ to the customer.",["are packed / is sent","is packed / are sent","pack / sends","packed / sent"],"orders พหูพจน์ → are + V3 · each box เอกพจน์ → is + V3"],
-  ["She ___ many trade shows in Asia. Last month, she ___ to one in Singapore.",["has attended / went","attended / has gone","has attended / has gone","attends / goes"],"ประสบการณ์ → has + V3 · Last month → V2"]
+  ["The printers ___ in Room 2 today. They're in the IT office.",["aren't","isn't","don't","doesn't"],"ช่องว่างไม่มีกริยาแท้ (in Room 2 แค่บอกสถานที่) จึงต้องใช้ verb to be ใช้ don't / doesn't ไม่ได้\nประธาน The printers เป็นพหูพจน์ (มี s) → aren't · isn't ใช้กับเอกพจน์"],
+  ["Mr. and Mrs. Tanaka run a small hotel. ___ hotel is near the train station.",["Their","They're","His","Our"],"Mr. and Mrs. Tanaka = 2 คน = they → คำแสดงความเป็นเจ้าของคือ their (โรงแรมของพวกเขา)\nThey're = They are ไม่ได้แสดงความเป็นเจ้าของ · His ใช้กับผู้ชายคนเดียว · Our = ของพวกเรา"],
+  ["Ploy works for ___ online shop in Bangkok.",["an","a","some","any"],"ดูที่ “เสียง” แรกของคำถัดไป: online ออกเสียง “ออน” เป็นเสียงสระ → an\nsome / any ใช้กับพหูพจน์หรือนามนับไม่ได้ แต่ shop เป็นเอกพจน์"],
+  ["The ___ meeting room is on the third floor. All the managers use it.",["managers'","manager's","manager","managers"],"คำใบ้ “All the managers use it” = ห้องประชุมเป็นของผู้จัดการหลายคน\nเจ้าของหลายคน (ลงท้าย s) → ใส่ ' หลัง s = managers' · manager's = ของผู้จัดการคนเดียว"],
+  ["We tested the new software last month. Don't worry, it ___ make our work faster.",["will","won't","might","is"],"คำใบ้ “We tested … Don't worry” = ทดสอบแล้ว มั่นใจว่างานจะเร็วขึ้น → will\nmight = อาจจะ (ยังไม่แน่ใจ) · won't = จะไม่ ซึ่งขัดกับ Don't worry"],
+  ["A: Does your company sell products online?\nB: Yes, it ___.",["does","is","can","do"],"คำถามขึ้นต้นด้วย Does → คำตอบสั้นใช้ does ตามคำถาม (Yes, it does.)\nis / can ใช้ตอบคำถามที่ขึ้นต้นด้วย Is / Can · do ใช้กับ I / you / we / they ไม่ใช้กับ it"],
+  ["___ there any problems with the delivery last Friday?",["Were","Was","Did","Are"],"last Friday = อดีต และ any problems เป็นพหูพจน์ → Were there …?\nWas ใช้กับเอกพจน์ · Did ใช้กับ there be ไม่ได้ · Are เป็นปัจจุบัน"],
+  ["The trade show starts ___ 9.30 a.m. ___ Monday.",["at / on","on / at","in / on","at / in"],"9.30 a.m. เป็นเวลา → at · Monday เป็นวัน → on\nจำง่าย ๆ: at + เวลา · on + วัน / วันที่ · in + เดือน / ปี / ฤดู"],
+  ["We usually get more orders ___ winter.",["in","on","at","to"],"winter เป็นฤดู → in (in winter, in summer)\non ใช้กับวัน (on Monday) · at ใช้กับเวลา (at 3 p.m.)"],
+  ["The machine ___ working at 4 p.m. yesterday.",["stopped","stoped","stops","stopping"],"yesterday = อดีต → Past simple\nstop เป็นคำพยางค์เดียว สระเดี่ยว + พยัญชนะตัวเดียว ต้องเบิ้ล p ก่อนเติม ed → stopped (stoped สะกดผิด)"],
+  ["What time ___ the client call you this morning?",["did","does","was","is"],"เหตุการณ์ผ่านไปแล้ว (this morning) และมีกริยาแท้ call → ใช้ did + ประธาน + V1: What time did the client call?\nwas / is ใช้กับประโยคที่ไม่มีกริยาแท้ · does เป็นปัจจุบัน"],
+  ["A: I forgot my pen.\nB: No problem. I ___ you mine.",["'ll give","give","gave","giving"],"B ตัดสินใจช่วยทันทีตอนที่พูด (No problem.) → I'll + V1 = I'll give\ngive เฉย ๆ ใช้กับสิ่งที่ทำเป็นประจำ · gave เป็นอดีต · giving ใช้ลำพังไม่ได้"],
+  ["Please be quiet. The manager ___ to a client on the phone right now.",["is talking","talks","are talking","talked"],"คำใบ้ right now / Please be quiet = กำลังเกิดขึ้นตอนนี้ → am / is / are + V-ing\nThe manager เป็นเอกพจน์ → is talking · are ใช้กับพหูพจน์"],
+  ["The new warehouse is ___ than the old one, so we can keep more stock.",["larger","large","more large","the largest"],"มี than = เปรียบเทียบ 2 สิ่ง (โกดังใหม่กับโกดังเก่า) → ขั้นกว่า\nlarge เป็นคำสั้น → larger (ไม่ใช้ more large) · the largest ใช้เมื่อเทียบ 3 สิ่งขึ้นไป"],
+  ["Of the three suppliers, Green Box has ___ prices.",["the cheapest","cheaper","the most cheap","cheapest"],"Of the three suppliers = เทียบ 3 ราย → ขั้นสูงสุด ต้องมี the\ncheap เป็นคำสั้น → the cheapest (ไม่ใช้ the most cheap) · cheaper ใช้เทียบ 2 สิ่ง"],
+  ["If the client ___ the contract today, we'll start the project next week.",["signs","will sign","sign","signed"],"First conditional: If + Present simple, … will + V1\nส่วนที่มี If ห้ามใช้ will · the client เป็นเอกพจน์ จึงเติม s → signs"],
+  ["Ken ___ come to the office on Fridays. He can work from home.",["doesn't have to","has to","don't have to","have to"],"คำใบ้ “He can work from home” = ไม่จำเป็นต้องมาออฟฟิศ → don't / doesn't have to\nKen = he (เอกพจน์) → doesn't have to · has to = ต้องมา ซึ่งขัดกับคำใบ้"],
+  ["___ the window open. The air conditioner is on.",["Don't leave","Not leave","Doesn't leave","No leave"],"เป็นข้อห้าม (อย่าเปิดหน้าต่างทิ้งไว้ เพราะเปิดแอร์อยู่) → Don't + V1\nประโยคคำสั่งไม่มีประธาน จึงใช้ Doesn't ไม่ได้ และไม่ใช้ Not / No นำหน้า"],
+  ["We need some new ___ for the meeting room, like tables and chairs.",["furniture","furnitures","a furniture","many furniture"],"furniture (เฟอร์นิเจอร์) เป็นนามนับไม่ได้ → ไม่เติม s · ไม่ใช้ a · ไม่ใช้ many\nถ้าจะนับ ให้พูดเป็นชิ้น ๆ เช่น tables and chairs"],
+  ["How ___ boxes did the supplier send?",["many","much","a little","any"],"boxes นับได้และเป็นพหูพจน์ → How many …?\nHow much ใช้กับนามนับไม่ได้ เช่น How much money / time"],
+  ["A: Who ___ the meeting yesterday?\nB: Our Sales Manager, Mr. Kim.",["arranged","did arrange","does arrange","arranging"],"คำตอบ “Our Sales Manager” คือคนที่จัดประชุม (ผู้กระทำ) → เป็นคำถามถามประธาน ไม่ต้องใช้ did\nWho + V2 = Who arranged …? · แต่ถ้าถามว่า “คุณนัดใคร” ถึงจะใช้ Who did you …?"],
+  ["Mai ___ take an English course next term. She already decided.",["is going to","are going to","going to","is going"],"คำใบ้ “She already decided” = ตั้งใจไว้แล้ว → be going to + V1\nMai เป็นเอกพจน์ → is going to · going to ขาด be · is going ขาด to"],
+  ["A: Are you free on Thursday?\nB: Sorry, I ___ the supplier in Lamphun. We arranged it last week.",["'m meeting","meet","will meet","met"],"คำใบ้ “We arranged it last week” = นัดกันไว้แล้ว → ใช้ Present continuous พูดถึงอนาคต (I'm meeting …)\nwill ใช้กับการตัดสินใจตอนพูด ไม่ใช่นัดที่จัดไว้แล้ว · met เป็นอดีต แต่วันพฤหัสยังมาไม่ถึง"],
+  ["Every day, the orders ___ in the warehouse. Then each box ___ to the customer.",["are packed / is sent","is packed / are sent","pack / sends","packed / sent"],"เป็นการอธิบายขั้นตอนงาน สิ่งของ “ถูก” กระทำ (ถูกแพ็ก ถูกส่ง) → Passive: is / are + V3\norders พหูพจน์ → are packed · each box เอกพจน์ → is sent"],
+  ["She ___ many trade shows in Asia. Last month, she ___ to one in Singapore.",["has attended / went","attended / has gone","has attended / has gone","attends / goes"],"ช่องแรกเป็นประสบการณ์ ไม่บอกว่าเมื่อไร → Present perfect: has attended\nช่องสองมี Last month = เวลาในอดีตชัดเจน → Past simple: went (ห้ามใช้ has gone กับ last month)"]
  ]},
  {id:"v",name:"Part II: Vocabulary",th:"คำศัพท์",qs:[
-  ["Staff can buy lunch in the ___ on the ground floor.",["canteen","warehouse","reception","factory"],"canteen = โรงอาหาร"],
-  ["The box got wet, and the printer inside was ___ during delivery.",["damaged","missing","incorrect","reliable"],"เสียหายระหว่างขนส่ง → damaged"],
-  ["The manager is sick today, so we need to ___ the meeting to next Tuesday.",["postpone","cancel","attend","approve"],"เปลี่ยนเป็นวันอื่น → postpone"],
-  ["I put all the sales numbers for this year in a ___.",["spreadsheet","agenda","minutes","contract"],"ตารางตัวเลข → spreadsheet"],
-  ["The supplier sent us an ___. We have to pay 20,000 baht by the end of the month.",["invoice","quote","agenda","receipt"],"เอกสารให้ชำระเงิน → invoice"],
-  ["Our low price is our biggest ___ over other companies.",["advantage","competitor","fee","feature"],"ข้อได้เปรียบ → advantage"],
-  ["The new ordering system is very ___. It saves us a lot of time.",["efficient","complicated","cramped","unreliable"],"ประหยัดเวลา → efficient"],
-  ["Doing our IT work ourselves is too expensive, so we ___ it to another company.",["outsource","relocate","hire","launch"],"ให้บริษัทภายนอกทำ → outsource"],
-  ["The company ___ a new phone every year in September.",["launches","hires","relocates","negotiates"],"เปิดตัวสินค้าใหม่ → launches"],
-  ["Before shipping, every product goes through an ___ to check its quality.",["inspection","demand","agreement","delivery"],"ตรวจคุณภาพ → inspection"],
-  ["The ___ is 50 baht, so 100 pens cost 5,000 baht.",["unit price","discount","fee","lead time"],"ราคาต่อชิ้น → unit price"],
-  ["After the plane lands, you collect your bags at ___.",["baggage claim","security","the gate","check-in"],"รับกระเป๋าหลังเครื่องลง → baggage claim"],
-  ["My flight is ___ by two hours because of the bad weather.",["delayed","cancelled","departed","booked"],"by two hours = ช้าไป 2 ชม. → delayed"],
-  ["More than 200 companies have a booth at this year's ___.",["exhibition","reservation","opinion","minutes"],"งานที่มีบูธ → exhibition"],
-  ["Please write the names of two ___ on your application. They can be your past managers.",["references","qualifications","skills","requirements"],"บุคคลอ้างอิง → references"]
+  ["Staff can buy lunch in the ___ on the ground floor.",["canteen","warehouse","reception","factory"],"คำใบ้ “buy lunch” → canteen = โรงอาหารของพนักงาน\nwarehouse = คลังสินค้า · reception = แผนกต้อนรับ · factory = โรงงาน"],
+  ["The box got wet, and the printer inside was ___ during delivery.",["damaged","missing","incorrect","reliable"],"คำใบ้ “got wet … during delivery” = ของเสียหายระหว่างขนส่ง → damaged\nmissing = ของหายไป ไม่ได้รับ · incorrect = ส่งผิดรุ่น / ผิดสี · reliable = เชื่อถือได้"],
+  ["The manager is sick today, so we need to ___ the meeting to next Tuesday.",["postpone","cancel","attend","approve"],"คำใบ้ “to next Tuesday” = ยังประชุมอยู่ แค่ย้ายวัน → postpone (เลื่อน)\ncancel = ยกเลิกไปเลย ไม่จัดแล้ว"],
+  ["I put all the sales numbers for this year in a ___.",["spreadsheet","agenda","minutes","contract"],"เก็บตัวเลขยอดขายเป็นตาราง → spreadsheet (ตารางคำนวณ)\nagenda = วาระการประชุม · minutes = บันทึกการประชุม · contract = สัญญา"],
+  ["The supplier sent us an ___. We have to pay 20,000 baht by the end of the month.",["invoice","quote","agenda","receipt"],"คำใบ้ “We have to pay … by the end of the month” → invoice = ใบแจ้งหนี้ (เอกสารเรียกเก็บเงิน)\nquote = ใบเสนอราคา (ก่อนตัดสินใจซื้อ) · receipt = ใบเสร็จ (ได้หลังจ่ายเงินแล้ว)"],
+  ["Our low price is our biggest ___ over other companies.",["advantage","competitor","fee","feature"],"ราคาถูกเป็นจุดที่ทำให้เราได้เปรียบบริษัทอื่น → advantage (ข้อได้เปรียบ)\ncompetitor = คู่แข่ง · fee = ค่าธรรมเนียม · feature = คุณสมบัติของสินค้า"],
+  ["The new ordering system is very ___. It saves us a lot of time.",["efficient","complicated","cramped","unreliable"],"คำใบ้ “saves us a lot of time” → efficient = มีประสิทธิภาพ\ncomplicated = ซับซ้อน · unreliable = เชื่อถือไม่ได้ (ความหมายลบ ขัดกับคำใบ้) · cramped ใช้กับสถานที่คับแคบ"],
+  ["Doing our IT work ourselves is too expensive, so we ___ it to another company.",["outsource","relocate","hire","launch"],"ไม่ทำเอง แต่ให้บริษัทอื่นทำแทน → outsource (จ้างบริษัทภายนอก)\nrelocate = ย้ายที่ตั้ง · hire = จ้างพนักงานเข้าบริษัท · launch = เปิดตัวสินค้า"],
+  ["The company ___ a new phone every year in September.",["launches","hires","relocates","negotiates"],"ออกโทรศัพท์รุ่นใหม่ทุกปี → launch = เปิดตัวสินค้าใหม่\nhire = จ้างคน · relocate = ย้ายที่ตั้ง · negotiate = ต่อรอง"],
+  ["Before shipping, every product goes through an ___ to check its quality.",["inspection","demand","agreement","delivery"],"คำใบ้ “to check its quality” → inspection = การตรวจสอบคุณภาพ\ndemand = ความต้องการของตลาด · agreement = ข้อตกลง · delivery = การจัดส่ง"],
+  ["The ___ is 50 baht, so 100 pens cost 5,000 baht.",["unit price","discount","fee","lead time"],"50 บาท × 100 ด้าม = 5,000 บาท → 50 บาทคือราคาต่อชิ้น = unit price\ndiscount = ส่วนลด · fee = ค่าธรรมเนียม · lead time = เวลาตั้งแต่สั่งจนได้ของ"],
+  ["After the plane lands, you collect your bags at ___.",["baggage claim","security","the gate","check-in"],"คำใบ้ “After the plane lands … collect your bags” → baggage claim = จุดรับกระเป๋า\nsecurity / check-in / the gate เป็นจุดที่ผ่าน “ก่อน” ขึ้นเครื่องทั้งหมด"],
+  ["My flight is ___ by two hours because of the bad weather.",["delayed","cancelled","departed","booked"],"by two hours = ช้าไป 2 ชั่วโมง แต่ยังบินอยู่ → delayed\ncancelled = ยกเลิก ไม่บินแล้ว จึงใช้กับ by two hours ไม่ได้ · departed = ออกเดินทางไปแล้ว"],
+  ["More than 200 companies have a booth at this year's ___.",["exhibition","reservation","opinion","minutes"],"งานที่บริษัทจำนวนมากมาตั้งบูธ → exhibition (งานแสดงสินค้า / นิทรรศการ)\nreservation = การจอง · opinion = ความคิดเห็น · minutes = บันทึกการประชุม"],
+  ["Please write the names of two ___ on your application. They can be your past managers.",["references","qualifications","skills","requirements"],"คำใบ้ “They can be your past managers” = คนที่รับรองเราได้ → references (บุคคลอ้างอิง)\nqualifications = วุฒิการศึกษา · skills = ทักษะ · requirements = คุณสมบัติที่บริษัทต้องการ"]
  ]},
  {id:"f",name:"Part III: Language Function",th:"ภาษาเพื่อการสื่อสาร",qs:[
-  ["How do you say this email address?\nsales_th@abc.com",["sales underscore th at abc dot com","sales hyphen th at abc dot com","sales underscore th dot abc at com","sales dash th at abc dot com"],"_ underscore · @ at · . dot"],
-  ["A: Can I ask a favour?\nB: ___",["Sure. What is it?","No, thanks. I'm fine.","Nice to meet you.","I'll see you then."],"ตอบรับคำขอ → Sure. What is it?"],
-  ["A: Why don't we use an online form for leave requests?\nB is NOT sure. B says: ___",["OK, but I'm not totally convinced.","That's a great idea.","I completely agree.","Yes, let's do it."],"not totally convinced = ยังไม่แน่ใจ"],
-  ["Your manager wants to suggest an improvement. What does she say?",["In future, try to check the numbers twice.","Fantastic work!","Well done on the presentation.","Great job with the client."],"In future, try to … = แนะนำให้ปรับปรุง"],
-  ["Client: Do you give a discount for big orders?\nSupplier: ___",["Yes. If you order 1,000 units, we can give you 5% off.","The delivery time is two weeks.","Our factory is in Rayong.","Thank you for your payment."],"ถามส่วนลด → ตอบเรื่องส่วนลด"],
-  ["Which sentence is best at the end of a formal email to a supplier?",["Thank you for your help with this order.","See you later!","Nice talking to you.","What's up?"],"ประโยคปิดอีเมลทางการ"],
-  ["A: You're breaking up. I can't hear you.\nB: ___",["Sorry. I'll call you back.","Yes, I can hear you clearly.","Can I take a message?","That's a good point."],"สัญญาณไม่ดี → เสนอทางแก้"],
-  ["A: I think we should move the trade show to May.\nB disagrees politely: ___",["I see your point, but I have a slightly different view.","That's a very good point.","You're wrong.","I completely agree with you."],"I see your point, but … = ไม่เห็นด้วยอย่างสุภาพ"],
-  ["Customer: The printer you sent doesn't work.\nStaff: ___",["I'm very sorry about that. We'll send you a new one today.","That's great to hear.","Thanks. See you later.","It worked when we sent it."],"ขอโทษ + เสนอทางแก้"],
-  ["Which sentence tells the audience the outline of a presentation?",["My presentation is divided into three parts.","To sum up, sales went up.","Thank you for your attention.","Good morning, everyone."],"divided into three parts = บอกโครงร่าง"]
+  ["How do you say this email address?\nsales_th@abc.com",["sales underscore th at abc dot com","sales hyphen th at abc dot com","sales underscore th dot abc at com","sales dash th at abc dot com"],"_ อ่านว่า underscore · @ อ่านว่า at · . อ่านว่า dot\nhyphen / dash คือเครื่องหมาย - ไม่ใช่ _ · ตัวเลือกที่อ่าน dot abc at com สลับตำแหน่ง at กับ dot"],
+  ["A: Can I ask a favour?\nB: ___",["Sure. What is it?","No, thanks. I'm fine.","Nice to meet you.","I'll see you then."],"A กำลัง “ขอความช่วยเหลือ” → ตอบรับว่า Sure. What is it? (ได้สิ มีอะไรเหรอ)\nNo, thanks. I'm fine. ใช้ปฏิเสธเมื่อมีคน “เสนอ” จะช่วยเรา · I'll see you then. ใช้ตอนนัดกันเสร็จ"],
+  ["A: Why don't we use an online form for leave requests?\nB is NOT sure. B says: ___",["OK, but I'm not totally convinced.","That's a great idea.","I completely agree.","Yes, let's do it."],"โจทย์บอกว่า B “ไม่แน่ใจ” → OK, but I'm not totally convinced. (โอเค แต่ยังไม่ค่อยมั่นใจ)\nตัวเลือกอื่นเป็นการเห็นด้วยทั้งหมด"],
+  ["Your manager wants to suggest an improvement. What does she say?",["In future, try to check the numbers twice.","Fantastic work!","Well done on the presentation.","Great job with the client."],"การแนะนำให้ปรับปรุงใช้ In future / Next time / Try to … → In future, try to check the numbers twice.\nFantastic work! / Well done / Great job เป็นคำชม ไม่ใช่คำแนะนำ"],
+  ["Client: Do you give a discount for big orders?\nSupplier: ___",["Yes. If you order 1,000 units, we can give you 5% off.","The delivery time is two weeks.","Our factory is in Rayong.","Thank you for your payment."],"ลูกค้าถามเรื่อง “ส่วนลด” → ต้องตอบเรื่องส่วนลด (สั่ง 1,000 ชิ้น ลด 5%)\nตัวเลือกอื่นพูดเรื่องเวลาส่ง ที่ตั้งโรงงาน และการชำระเงิน ซึ่งไม่ตรงคำถาม"],
+  ["Which sentence is best at the end of a formal email to a supplier?",["Thank you for your help with this order.","See you later!","Nice talking to you.","What's up?"],"อีเมลทางการถึงซัพพลายเออร์ ควรปิดด้วยประโยคสุภาพ เช่น การขอบคุณ → Thank you for your help with this order.\nSee you later! / Nice talking to you. / What's up? เป็นภาษาพูด ไม่ใช้ในอีเมลทางการ"],
+  ["A: You're breaking up. I can't hear you.\nB: ___",["Sorry. I'll call you back.","Yes, I can hear you clearly.","Can I take a message?","That's a good point."],"You're breaking up = สัญญาณขาด ๆ หาย ๆ → ต้องเสนอทางแก้: I'll call you back.\nYes, I can hear you clearly. ขัดกับสถานการณ์ · Can I take a message? ใช้ตอนรับฝากข้อความ"],
+  ["A: I think we should move the trade show to May.\nB disagrees politely: ___",["I see your point, but I have a slightly different view.","That's a very good point.","You're wrong.","I completely agree with you."],"ไม่เห็นด้วยอย่างสุภาพ = รับฟังอีกฝ่ายก่อน แล้วค่อยบอกว่าคิดต่าง → I see your point, but …\nYou're wrong. ไม่เห็นด้วยแต่ไม่สุภาพ · อีกสองตัวเลือกเป็นการเห็นด้วย"],
+  ["Customer: The printer you sent doesn't work.\nStaff: ___",["I'm very sorry about that. We'll send you a new one today.","That's great to hear.","Thanks. See you later.","It worked when we sent it."],"รับเรื่องร้องเรียนต้องมี 2 ส่วน: ขอโทษ (I'm very sorry) + เสนอทางแก้ (send you a new one)\nIt worked when we sent it. เป็นการเถียงลูกค้า · อีกสองตัวเลือกไม่ได้แก้ปัญหาเลย"],
+  ["Which sentence tells the audience the outline of a presentation?",["My presentation is divided into three parts.","To sum up, sales went up.","Thank you for your attention.","Good morning, everyone."],"บอกโครงร่าง = บอกว่าการนำเสนอมีกี่ส่วน → My presentation is divided into three parts.\nTo sum up = สรุปตอนท้าย · Thank you for your attention = ปิดการนำเสนอ · Good morning = ทักทายตอนเปิด"]
  ]}
 ];
 
@@ -279,7 +280,7 @@ function qHTML(q,i){
     <div class="opts ${long?"long":""}">${q.o.map((o,k)=>{
       let c="opt";if(S.done){if(k===q.a)c+=" r";else if(u===k)c+=" w";}
       return `<button class="${c}" data-q="${i}" data-k="${k}" aria-pressed="${!S.done&&u===k}" ${S.done?"disabled":""}><span class="k">${L[k]}</span><span>${esc(o)}</span></button>`;}).join("")}</div>
-    ${S.done?`<div class="why ${u===q.a?"":"miss"}"><b>${u===undefined?"ไม่ได้ตอบ":u===q.a?"ถูก":"ผิด"}</b> · เฉลย ${L[q.a]} — ${esc(q.e)}</div>`:""}
+    ${S.done?`<div class="why ${u===q.a?"":"miss"}"><b>${u===undefined?"ไม่ได้ตอบ":u===q.a?"ถูก":"ผิด"}</b> · เฉลย ${L[q.a]}. ${esc(q.o[q.a])}<div class="exp">${esc(q.e).replace(/\n/g,"<br>")}</div></div>`:""}
   </div>`;
 }
 
